@@ -1,0 +1,10 @@
+[Unit]
+Description  = Run check net script
+After=default.target
+
+[Service]
+ExecStart=/etc/check_net.sh
+
+[Install]
+WantedBy=default.target
+
