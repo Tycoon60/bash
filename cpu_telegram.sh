@@ -8,5 +8,5 @@ senc=$(sensors | grep "Package id 0:" | awk '{print $4}' | awk '{print int($1+0.
 #echo $senc
 
 if [ ${senc} -gt 25 ] ; then
-	curl -s -X POST https://api.telegram.org/bot1492809911:AAGbke4KMZZw1hUfRX8UCjy2IpB3b5gZItU/sendMessage -F chat_id='-427379370' -F text="Проверить кондиционер"
+	curl -s -X POST https://api.telegram.org/bot1492809911:My_Token/sendMessage -F chat_id='-427379370' -F text="Проверить кондиционер"
 fi
